@@ -10,4 +10,11 @@ install:
  - sudo apt-get install libxcb-render-util0 libxcb-image0 libxcb-keysyms1 libxcb-icccm4 libxkbcommon-x11-0
  - pip install -r requirements.txt
  
-script: "python gui/mvm_gui.py fakeESP32"
+ - pip install bandit
+ - bandit-config-generator -o bandit.conf
+ 
+script:
+ - bandit -r gui
+ - bandit -r libcloud -f html -o libcloud.html
+ 
+#script: "python gui/mvm_gui.py fakeESP32"
