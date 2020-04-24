@@ -3,7 +3,7 @@ python:
  - "3.6"
 cache: pip
 env:
- - QT_DEBUG_PLUGINS=1
+ #- QT_DEBUG_PLUGINS=1
  - QT_QPA_PLATFORM=offscreen
 install: 
  - pip install --upgrade pip
