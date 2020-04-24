@@ -3,8 +3,7 @@ python:
  - "3.6"
 cache: pip
 env:
- #- QT_DEBUG_PLUGINS=1
- - QT_QPA_PLATFORM=offscreen
+ - QT_QPA_PLATFORM=offscreen  #- QT_DEBUG_PLUGINS=1
 install: 
  - pip install --upgrade pip
  - sudo apt-get install -qq libegl1-mesa
