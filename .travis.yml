@@ -3,8 +3,8 @@ python:
  - "3.6"
 cache: pip
 install: 
- - curl -L http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.3/PyQt-x11-gpl-4.11.3.tar.gz -o /downloads/pyqt4.tar.gz
- - "pip install -r requirements.txt"
+ - curl -L http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.3/PyQt-x11-gpl-4.11.3.tar.gz -o pyqt4.tar.gz
+ - pip install -r requirements.txt
  
 
 script: "python gui/mvm_gui.py fakeESP32"
