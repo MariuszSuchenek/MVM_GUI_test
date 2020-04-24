@@ -7,7 +7,7 @@ env:
 install: 
  - pip install --upgrade pip
  - sudo apt-get install -qq libegl1-mesa
- - sudo apt-get install libxcb-render-util0 libxcb-image0 libxcb-keysyms1 libxcb-icccm4
+ - sudo apt-get install libxcb-render-util0 libxcb-image0 libxcb-keysyms1 libxcb-icccm4 libxkbcommon-x11-0
  - pip install -r requirements.txt
  
 script: "python gui/mvm_gui.py fakeESP32"
