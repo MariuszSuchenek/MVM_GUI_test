@@ -1,14 +1,6 @@
 language: python
 python:
  - "3.5"
- #install:
- # - pip install -r requirements.txt
- 
- services:
-  - docker
-  
-  before_script: pip install docker-compose
- 
- script:
- - docker-compose
-docker run app sh -c "python gui/mvm_gui.py fakeESP32"
+cache: pip
+install: "pip install -r requirements.txt"
+script: "python gui/mvm_gui.py fakeESP32"
