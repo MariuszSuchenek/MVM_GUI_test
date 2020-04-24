@@ -4,6 +4,7 @@ python:
 cache: pip
 install: 
  - pip install --upgrade pip
+ - sudo apt-get install -qq libegl1-mesa
  - pip install -r requirements.txt
  
 script: "python gui/mvm_gui.py fakeESP32"
